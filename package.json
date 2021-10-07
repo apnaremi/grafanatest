@@ -7,7 +7,7 @@
     "test": "grafana-toolkit plugin:test",
     "dev": "grafana-toolkit plugin:dev",
     "watch": "grafana-toolkit plugin:dev --watch",
-    "sign": "grafana-toolkit plugin:sign",
+    "sign": "grafana-toolkit plugin:sign --rootUrls http://localhost:3000,https://purubit.grafana.net",
     "start": "yarn watch"
   },
   "author": "Grafana Labs",
@@ -18,5 +18,8 @@
   },
   "engines": {
     "node": ">=14"
+  },
+  "dependencies": {
+    "@grafana/ui": "^8.2.0"
   }
 }
